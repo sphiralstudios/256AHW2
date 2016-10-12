@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Cx0zz7" name="FaustSynth" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.FaustSynth" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.4">
+  <MAINGROUP id="Lsb85Q" name="FaustSynth">
+    <GROUP id="{E0917372-4388-6657-8A64-01B626E9BB7A}" name="Source">
+      <FILE id="wRCFhT" name="FaustReverb.h" compile="0" resource="0" file="Source/FaustReverb.h"/>
+      <FILE id="i5YIzP" name="spiralbackground2.png" compile="0" resource="1"
+            file="Source/spiralbackground2.png"/>
+      <FILE id="x106Uz" name="MySynth.h" compile="0" resource="0" file="Source/MySynth.h"/>
+      <FILE id="ofmiND" name="Saw.h" compile="0" resource="0" file="Source/faust/Saw.h"/>
+      <FILE id="xZGX1h" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="NJD3QL" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="FaustSynth"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="FaustSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="FaustSynth"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="FaustSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="FaustSynth"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="FaustSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Applications/juce-grapefruit-osx/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
