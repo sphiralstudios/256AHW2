@@ -2,7 +2,7 @@ Homework #2 for Music 256A
 
 by Mark Hertensteiner
 
-Synth in Polor Coordinates with low-pass resonnant filter and reverb.
+Synth in Polor Coordinates with low-pass resonant filter and reverb.
 
 Angle (theta) is chroma, distance from center (radius) mapped to octave.
 
