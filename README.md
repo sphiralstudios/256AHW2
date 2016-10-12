@@ -1,23 +1,16 @@
-# Faust Based Basic Synth
+Homework #2 for Music 256A 
 
-This example project demonstrates how Faust (<http://faust.grame.fr>) can be used with JUCE to create audio synthesizers.
+by Mark Hertensteiner
 
-## Instructions
+Synth in Polor Coordinates with low-pass resonnant filter and reverb.
 
-The C++ code corresponding to `Source/faust/saw.dsp` is `Source/faust/Saw.h`. It was generated using the following command:
+Angle (theta) is chroma, distance from center (radius) mapped to octave.
 
-```
-faust -a arch.cpp -i -cn Saw saw.dsp -o Saw.h
-```
+Background color is mapped to Chroma.  The thought just occurred to me that saturation could have also mapped to radius for an additional dimension of this effect.
 
-where:
+Filter cutoff frequency mapped to radius length.
 
-* `-a` designates the Faust architecture file (C++ wrapper)
-* `-i` indicates to inline the C++ code of `arch.cpp` in the resulting C++ file (check `arch.cpp` for more information)
-* `-cn` designates the name of the generated C++ class
+Known issues:
 
-Thus, if changes are made to `saw.dsp`, this command needs to be run in order for them to be reflected to `Saw.h`.
+Some smoothing had to be removed to preserve passing of freqency and gain values between the two saw oscillators.  As a result there is a quiet click that can be heard when this happens, owing to the use of spectral-rich saw wave oscillators.
 
----
-
-Implemented by Romain Michon (rmichonATccrmaDOTstanfordDOTedu) for Music 256a / CS 476a (fall 2016).
